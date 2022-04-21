@@ -9,7 +9,7 @@ export default function Layout({ title, keywords, description, children }) {
         <title>{title}</title>
         <meta name='keywords' content={keywords} />
         <meta name='description' content={description} />
-        <link rel='icon' href=`/images/logo.png` />
+        <link rel='icon' href= {`${process.env.NEXT_PUBLIC_FAVICON}/images/logo.png`} />
       </Head>
       <Header />
       <Search />
