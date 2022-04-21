@@ -1,15 +1,18 @@
 {
-  "name": "devspace-blog",
+  "name": "blog",
+  "homepage": "https://eqan.github.io/blogs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "cache-posts": "node scripts/cache.js",
     "prepare": "husky install"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "gray-matter": "^4.0.3",
     "marked": "^2.0.4",
     "next": "10.2.0",
