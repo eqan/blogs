@@ -9,9 +9,8 @@ export default function Layout({ title, keywords, description, children }) {
         <title>{title}</title>
         <meta name='keywords' content={keywords} />
         <meta name='description' content={description} />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href=`${process.env.NEXT_PUBLIC_FAVICON}/images/logo.png` />
       </Head>
-
       <Header />
       <Search />
       <main className='container mx-auto my-7'>{children}</main>
@@ -20,7 +19,7 @@ export default function Layout({ title, keywords, description, children }) {
 }
 
 Layout.defaultProps = {
-  title: 'Welcome to DevSpace',
+  title: 'Eqan Ahmad | Blogs',
   keywords: 'development, coding, programming',
-  description: 'The best info and news in development',
+  description: 'My personal research and projects blogs.',
 }
