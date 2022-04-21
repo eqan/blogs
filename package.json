@@ -1,6 +1,5 @@
 {
-  "name": "blog",
-  "homepage": "https://eqan.github.io/blogs",
+  "name": "blogs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
